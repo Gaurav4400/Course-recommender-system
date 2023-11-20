@@ -1,0 +1,53 @@
+{% extends "innerpage.html" %}
+{% block body %}
+
+<div class="content">
+       
+    <div class="read">
+       <h3>Linear Search Algorithm</h3>
+       <p>In this article, we will discuss the Linear Search Algorithm. Searching is the process of finding some particular element in the list. If the element is present in the list, then the process is called successful, and the process returns the location of that element; otherwise, the search is called unsuccessful.</p> <br>
+       <p>Two popular search methods are Linear Search and Binary Search. So, here we will discuss the popular searching technique, i.e., Linear Search Algorithm.</p> <br>
+       <p>Linear search is also called as <b style="color: black;">sequential search algorithm</b>. It is the simplest searching algorithm. In Linear search, we simply traverse the list completely and match each element of the list with the item whose location is to be found. If the match is found, then the location of the item is returned; otherwise, the algorithm returns NULL.</p> <br>
+       <p>It is widely used to search an element from the unordered list, i.e., the list in which items are not sorted. The worst-case time complexity of linear search is <b style="color: black;"> O(n)</b>.</p> <br>
+     <img  src="{{ url_for('static', filename='img/linear-search-algorithm1.png')}}" alt="">
+    </div>
+    <div class="video">
+        <h3>video lectures</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/B2hg86t50W0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="practiceq">
+        <h3>practice questions</h3>
+        <h4>1)How many comparisons are done in Linear Search for N elements (in worst case)?</h4>
+        <h4>2)What is the time complexity of Linear Search for string data?</h4> 
+        <h4>3)What is the time complexity of Linear Search for Integer data?</h4>
+        <h4>4)Why is the worst case time complexity same as average case for Linear Search?</h4>
+        <h4>5)When is Hash Map preferred over Linear Search?</h4>
+        <h4>6)When is Linear Search preferred over Hash Map?</h4>
+        <h4>7)When is Linear Search preferred over Binary Search?
+        </h4>
+        <h4>8)When is Binary Search preferred over Linear Search?</h4>
+        <h4>9)If list is sorted and you use Linear search, what can be the benefit?</h4>
+        <h4>10)When is Linear Search prefered over Interpolation Search?</h4>
+        <h4></h4>
+        <h4></h4>
+        <h4></h4>
+        <h4></h4>
+    </div>
+    <div class="interviewq">
+        <h3>Interview questions</h3>
+        <h4> <b> 1)What is best case efficiency of linear search?</b></h4>
+        <p>Ans)The best case efficiency of linear search is O(1).</p> <br>
+        <h4><b>2)Write an algorithm to search for an employee ID in an array(Hint: use linear search)</b></h4>
+        <p>Ans) This are following steps:- <ul style="list-style:bullet ; margin-left: 2%;"> 
+            <li>Read the employee ID to be searched</li>   
+            <li> Set i=0</li>
+            <li>Repeat step d until i>n or arr[i]=employee ID</li>
+            <li>Increment i by 1</li>
+            <li> If i>n : Display "Not found"</li>
+            <li>Else Display "Found"</li>
+        </ul></p>
+        
+    </div>
+</div>
+
+{% endblock %}

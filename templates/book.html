@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>E-books</h1>
+    <ul>
+        <li> <a href="{{ url_for('static', filename='e-book/DBMS notes.pdf')}}" target="_blank">DBMS </a> </li>
+        <li><a href="{{ url_for('static', filename='e-book/cpp short notes.pdf')}}" target="_blank">Cpp</a> </li>
+        <li><a href="{{ url_for('static', filename='e-book/OS long notes.pdf')}}" target="_blank">Operating System</a> </li>
+        <li><a href="{{ url_for('static', filename='e-book/networking.pdf')}}" target="_blank">Networking</a> </li>
+        <li><a href="{{ url_for('static', filename='e-book/DSA.pdf')}}" target="_blank">Data Structures and Algorithm</a> </li>
+    </ul>
+</body>
+</html>

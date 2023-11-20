@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptive Learning </title>
+    <link rel="icon" href="{{ url_for('static', filename='img/home.jpg')}}" type="image/icon type">
+
+    <!-- google fonts cdn link  -->
+    <!--link rel="preconnect" href="https://fonts.gstatic.com"-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+
+
+
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><i class="fas fa-user-graduate"></i> Receptive Learning</a>
+
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="/">Home</a></li>
+            <li><a href="/about">about</a></li>
+            <li><a href="/course">course</a></li>
+            <li><a href="/connect">connect</a></li>
+            <li><a href="/contact">contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="login" class="fas fa-user-circle"></div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form  -->
+
+<div class="login-form">
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" placeholder="username" class="box">
+        <input type="password" placeholder="password" class="box">
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="/reg.html">register now</a></p>
+        <input type="submit" class="btn" value="login">
+        <i class="fas fa-times"></i>
+    </form>
+
+</div>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/innerpage.css')}}">
+<div class="layout">
+
+<!-- search section starts here-->
+    <div class="xbox">
+      <ul>
+          <li> <a href="#">My stratagy</a> </li>
+          <li><a  href="e-books" target="_blank">E-books</a></li>
+          <li><a href="">editor</a></li>
+        <li><input type="text" placeholder="Search...">
+        <button type="submit"><i class="fa fa-search"></i></button></li>
+         <li><a href="{{ url_for('static', filename='linear_search.pdf')}}" target="_blank">short Notes</a></li>
+         <li><a href="">discussion forum</a></li>
+         <li><a href="">FAQ</a></li>
+      </ul>
+    </div>
+<!-- search section ends here-->
+
+<!-- topic section starts here-->
+    <div class="topic">
+    <img class="img" src="{{ url_for('static', filename='img/DSA.jpeg')}}" alt="">
+
+      <ul class="chap"> <li class="heading"> Data Structure & Algorithms</li>
+          <li class="subchap"><a href="dsahome">Introduction</a></li>
+          <li class="subchap"><a href="#">Basics</a></li>
+      </ul>
+    
+      <ul class="chap"><li class="heading">algorithms</li>
+        <li class="subchap"><a href="#">algorithms basics</a></li>
+        <li class="subchap"><a href="#">greedy algorithms</a></li>
+        <li class="subchap"><a href="#">divide and conquer</a></li>
+        <li class="subchap"><a href="#">dynamic programming</a></li>
+    </ul>
+      
+      <ul class="chap"> <li class="heading"> linked lists</li>
+          <li class="subchap"><a href="#">linked list basics</a></li>
+          <li class="subchap"><a href="#">doubly linked list</a></li>
+          <li class="subchap"><a href="#">circular linked list</a></li>
+      </ul>
+
+      <ul class="chap"> <li class="heading"> Searching Algorithms</li>
+          <li class="subchap"><a href="linear_search">linear search</a></li>
+          <li class="subchap"><a href="#">binary search</a></li>
+      </ul>
+    
+      <ul class="chap"><li class="heading"> sorting Algorithms</li>
+          <li class="subchap"><a href="#">bubble sort</a></li>
+          <li class="subchap"><a href="#">insertion sort</a></li>
+          <li class="subchap"><a href="#">selection sort</a></li>
+          <li class="subchap"><a href="#">merge sort</a></li>
+          <li class="subchap"><a href="#">quick sort</a></li>
+      </ul>
+      <ul class="chap"> <li class="heading"> graphs</li>
+        <li class="subchap"><a href="#">graph data Structure</a></li>
+        <li class="subchap"><a href="#">depth first search</a></li>
+        <li class="subchap"><a href="#">breadth first search</a></li>
+    </ul>
+    <ul class="chap"><li class="heading"> tree</li>
+        <li class="subchap"><a href="#">introduction to trees</a></li>
+        <li class="subchap"><a href="#">tree traversal</a></li>
+        <li class="subchap"><a href="#">binary search tree</a></li>
+        <li class="subchap"><a href="#">AVL tree</a></li>
+        <li class="subchap"><a href="#">spanning tree</a></li>
+    </ul>
+    <ul class="chap"><li class="heading"> recursion</li>
+        <li class="subchap"><a href="#">basics of recursion</a></li>
+        <li class="subchap"><a href="#"> tower of hanoi</a></li>
+        <li class="subchap"><a href="#">fabonacci series</a></li>
+    </ul>
+    </div>
+<!-- topic section ends here-->
+
+<!-- content section starts here--> 
+{% block body %} {% endblock %}
+<!-- content section ends here-->
+
+<!-- sidebar section start here-->
+    <div class="sidebar">
+        <div class="notes">
+            <h3 id="notesbtn">take notes</h3>
+             <textarea rows="40" id="texTareaI" placeholder="take notes here...";></textarea><br>
+             <button id="buttonDownload">DOWNLOAD NOTES </button>
+        </div>
+        <div class="extra1">
+          <h2>Road map</h2>
+        </div>
+        
+        <div class="extra2">
+
+        </div>
+    </div> 
+<!-- sidebar section ends here-->
+<script src="{{ url_for('static', filename='js/notes.js')}}"></script>
+<!-- footer section starts  -->
+
+<div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>popular courses</h3>
+            <a href="dsa.html"> complete DSA</a>
+            <a href="#">Front end development</a>
+            <a href="#">back end development</a>
+            <a href="#">Programming fundamentals</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="/">home</a>
+            <a href="about.html">about</a>
+            <a href="/connect">connect</a>
+            <a href="/contact">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-map-marker-alt"></i> Chandigarh, india 140301. </p>
+            <p> <i class="fas fa-envelope"></i>kumargaurav@gmail.com</p>
+            <p> <i class="fas fa-phone"></i> +91 7645880103 </p>
+        </div>
+
+    </div>
+
+    <h1 class="credit">created by <a href="#">Kumar Gaurav</a> all rights reserved. </h1>
+
+</div>
+
+<!-- footer section ends -->
+
+
+
+<!-- jquery cdn link-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="{{ url_for('static', filename='js/script.js')}}"></script>
+
+</body>
+</html>
+

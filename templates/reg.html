@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block body %}
+
+		<!-- LINEARICONS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='fonts/linearicons/style.css')}}">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/reg.css')}}">
+
+		<div class="wrapper">
+			<div class="inner">
+				<img src="{{ url_for('static', filename='img/image-1.png')}}" alt="" class="image-1">
+				<form action="">
+					<h3>New Account?</h3>
+					<div class="form-holder">
+						<span class="lnr lnr-user"></span>
+						<input type="text" class="form-control" placeholder="Username">
+					</div>
+					<div class="form-holder">
+						<span class="lnr lnr-phone-handset"></span>
+						<input type="text" class="form-control" placeholder="Phone Number">
+					</div>
+					<div class="form-holder">
+						<span class="lnr lnr-envelope"></span>
+						<input type="text" class="form-control" placeholder="Mail">
+					</div>
+					<div class="form-holder">
+						<span class="lnr lnr-lock"></span>
+						<input type="password" class="form-control" placeholder="Password">
+					</div>
+					<div class="form-holder">
+						<span class="lnr lnr-lock"></span>
+						<input type="password" class="form-control" placeholder="Confirm Password">
+					</div>
+					<button>
+						<span>Register</span>
+					</button>
+					<br>
+					<p style=" align-content:justify;">Already have an account? <a href="#login-form">login here</a></p>
+				</form>
+				<img src="{{ url_for('static', filename='img/image-2.png')}}" alt="" class="image-2">
+			</div>
+			
+		</div>
+		
+		<script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js')}}"></script>
+		<script src="{{ url_for('static', filename='js/main.js')}}"></script>
+
+{% endblock %}

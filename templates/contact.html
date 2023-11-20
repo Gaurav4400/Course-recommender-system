@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block body %}
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading">contact us</h1>
+    
+    <div class="row">
+    
+        <form action="/contact" method="POST">
+            <input name="name" type="text" placeholder="full name" class="box">
+            <input name="email" type="email" placeholder="your email" class="box">
+            <input name="date" type="date" placeholder="Date" class="box">
+            <input name="phone" type="number" placeholder="your number" class="box">
+            <textarea name="query" id="" cols="30" rows="10" class="box address" placeholder="your query"></textarea>
+            <input type="submit" class="btn" value="send now">
+        </form>
+    
+        <div class="image">
+            <img src="{{ url_for('static', filename='img/contact.png')}}" alt="">
+        </div>
+    
+    </div>
+    
+    </section>
+    
+    <!-- contact section ends -->
+    {% endblock %}
