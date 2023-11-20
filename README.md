@@ -18,6 +18,7 @@ Another approach can be collabrative filtering, which is not used in this notebo
 **Language:** Python (3.9)
 
 **Front-End:** HTML/CSS/JS
+
 **Framework:** Flask
 
 
