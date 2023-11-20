@@ -4,11 +4,14 @@ A course recommendation system using the Coursera Courses dataset which contains
 
 The model has been trained using a dataset of 3,000 courses! Find the dataset [here 🔗](https://www.kaggle.com/khusheekapoor/coursera-courses-dataset-2021)
 
-Link to my Kaggle Notebook [here 🔗](https://www.kaggle.com/sagarbapodara/coursera-course-recommendation-system-webapp)
+## System Overview
+In this course recommendation system, content-based similarity filtering based on the course tags which the users either watch or search is being used.
 
-Check out the demo of the application on Youtube [here 🔗](https://youtu.be/9hQPhsIZsoA)
+The dataset used is of the Coursera Courses Dataset which contains over 3,000 courses!
 
-Use the application live [here 🔗](https://huggingface.co/spaces/SagarBapodara/Coursera-Course-Recommendation)
+Another approach can be collabrative filtering, which is not used in this notebook. An advance approach can be using both these approach in a hybrid mode.,
+
+
 
 ## Tech Used 
 
@@ -16,7 +19,6 @@ Use the application live [here 🔗](https://huggingface.co/spaces/SagarBapodara
 
 **Front-End:** Streamlit
 
-_Please Note that this technology is being used for the latest version. Further improvements in the project may result in changes in the technology used. It will be updated above as well._ 
 
 ## Installation / Working
 
@@ -52,21 +54,9 @@ Clone this repository or Download the files into your local system.
 - Extract the ZIP file (if you directly download from Github Web)
 - Make sure all the files are in the same folder/directory
 - Open your Command Prompt (CMD) in the same directory 
-- Type the following command (for web app) : 
 
-```bash
-streamlit run main.py
-```
 
-- Make sure you have streamlit installed on your local device, if not installed, type the following to install (windows) : 
-
-```bash
-pip install streamlit 
-```
-
-## Working Demo 
-
-The demo working of this web app can be found [here 🔗](https://youtu.be/9hQPhsIZsoA) | Do like it, if you watch it :) 
+ 
 
 ## 🚀 Thanks
 
@@ -74,11 +64,4 @@ Thanks for looking into the project and being here. Feel free to share your revi
 
 **If you found it useful, leave a ⭐ here!**
 
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-Ending Credits 
-- Made using Python and Streamlit
-- @Author : [Sagar Bapodara](https://www.linkedin.com/in/sagar-bapodara/)
 
